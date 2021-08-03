@@ -1,0 +1,48 @@
+html {
+    background-color: #121212;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: white
+}
+
+body {
+    min-height: 100%;
+    margin: 0 10em;
+    width: 50em;
+}
+
+h1 {
+    font-size: 3.75em;
+    text-shadow: 0.1em 0.1em 0.1em #ffb6c1;
+}
+
+h2 {
+    margin: 3em 0em 1em 0em;
+    font-size: 2em;
+    text-shadow: 0.1em 0.1em 0.1em #ffb6c1;
+}
+
+p, li {
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+a {
+    color: #ffb6c1;
+    text-decoration-thickness: 0;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+img {
+    display: block;
+    width: 46em;
+}
+
+#commands{
+    display: block;
+    width: 25em;
+}
