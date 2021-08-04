@@ -2,7 +2,12 @@ html {
     background-color: #121212;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
-    color: white
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -11,22 +16,31 @@ body {
     max-width: 100%;
 }
 
+section {
+    margin: 0rem;
+    padding: 5rem 0rem 0rem 0rem;
+}
+
 h1 {
-    margin: 7rem 0rem 3rem 0rem;
     font-size: calc(4vw + 4vh + 2vmin);
-    text-shadow: 0.2rem 0.2rem 0.2rem #ffb6c1;
+    text-shadow: 0.1rem 0.1rem 0.1rem #ffb6c1;
+    padding: 0 0 3rem 0;
 }
 
 h2 {
-    margin: 10rem 0rem 3rem 0rem;
     font-size: calc(3vw + 3vh + 2vmin);
-    text-shadow: 0.2rem 0.2rem 0.2rem #ffb6c1;
+    text-shadow: 0.1rem 0.1rem 0.1rem #ffb6c1;
+    padding: 0 0 2rem 0;
 }
 
 h3 {
-    margin: 5rem 0rem 1.5rem 0rem;
     font-size: calc(1.5vw + 1.5vh + 2vmin);
-    text-shadow: 0.2rem 0.2rem 0.2rem #ffb6c1;
+    text-shadow: 0.1rem 0.1rem 0.1rem #ffb6c1;
+}
+
+h4 {
+    font-size: calc(1vw + 1vh + 2vmin);
+    text-shadow: 0.1rem 0.1rem 0.1rem #ffb6c1;
 }
 
 p {
@@ -46,6 +60,10 @@ a:hover {
     color: skyblue;
 }
 
+#wink-link {
+    text-decoration: none;
+}
+
 #winkjpeg {
     display: block;
     width: 40rem;
@@ -60,4 +78,28 @@ a:hover {
 
 footer {
     margin: 5rem 0rem 0rem 0rem;
+}
+
+.collapsible {
+    margin: 0rem;
+    background-color: #121212;
+    cursor: pointer;
+    color: white;
+    border: none;
+    text-align: left;
+    outline: none;
+    max-width: 45rem;
+}
+
+.active, .collapsible:hover {
+    padding: 1rem 0rem 1rem 1rem;
+    background-color: lightpink;
+    border-radius: 0.5rem;
+}
+
+.wink-content {
+    padding: 0;
+    display: none;
+    overflow-wrap: break-word;
+    background-color: #121212;
 }
