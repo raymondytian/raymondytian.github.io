@@ -94,7 +94,7 @@ footer {
     border-width: 0.1rem;
 }
 
-@media(hover: hover) and (pointer: fine) {
+@media(hover: hover) and (pointer: coarse) and (pointer:fine) {
     .collapsible:hover {
         padding: 1rem 0rem 1rem 1rem;
         background-color: #121212;
