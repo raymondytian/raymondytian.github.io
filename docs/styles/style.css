@@ -94,13 +94,38 @@ footer {
     border-width: 0.1rem;
 }
 
-@media(hover: hover) and (pointer: coarse) and (pointer:fine) {
+@media(hover: hover) {
     .collapsible:hover {
         padding: 1rem 0rem 1rem 1rem;
         background-color: #121212;
         opacity: 1;
     }
 }
+
+@media (pointer: coarse) {
+    .collapsible:hover {
+        padding: 1rem 0rem 1rem 1rem;
+        background-color: #121212;
+        opacity: 1;
+    }
+}
+
+@media (pointer: fine) {
+    .collapsible:hover {
+        padding: 1rem 0rem 1rem 1rem;
+        background-color: #121212;
+        opacity: 1;
+    }
+}
+
+@media (pointer: none) {
+    .collapsible:hover {
+        padding: 1rem 0rem 1rem 1rem;
+        background-color: #121212;
+        opacity: 1;
+    }
+}
+
 
 .wink-content {
     padding: 0;
