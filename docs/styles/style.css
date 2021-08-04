@@ -81,7 +81,7 @@ footer {
 }
 
 .collapsible {
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     background-color: #121212;
     opacity: 0.75;
     cursor: pointer;
@@ -96,36 +96,19 @@ footer {
 
 @media(hover: hover) {
     .collapsible:hover {
-        padding: 1rem 0rem 1rem 1rem;
+        padding: 1.1rem 1rem 1.1rem 1rem;
         background-color: #121212;
         opacity: 1;
     }
 }
 
-@media (pointer: coarse) {
-    .collapsible:hover {
-        padding: 1rem 0rem 1rem 1rem;
+@media(hover:none) {
+    .collapsible:hover, .collapsible:active {
+        padding: 1.1rem 1rem 1.1rem 1rem;
         background-color: #121212;
         opacity: 1;
     }
 }
-
-@media (pointer: fine) {
-    .collapsible:hover {
-        padding: 1rem 0rem 1rem 1rem;
-        background-color: #121212;
-        opacity: 1;
-    }
-}
-
-@media (pointer: none) {
-    .collapsible:hover {
-        padding: 1rem 0rem 1rem 1rem;
-        background-color: #121212;
-        opacity: 1;
-    }
-}
-
 
 .wink-content {
     padding: 0;
