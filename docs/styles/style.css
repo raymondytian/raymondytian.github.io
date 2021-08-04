@@ -13,13 +13,19 @@ body {
 
 h1 {
     margin: 7rem 0rem 3rem 0rem;
-    font-size: 7rem;
+    font-size: calc(4vw + 4vh + 2vmin);
     text-shadow: 0.2rem 0.2rem 0.2rem #ffb6c1;
 }
 
 h2 {
     margin: 10rem 0rem 3rem 0rem;
-    font-size: 4rem;
+    font-size: calc(3vw + 3vh + 2vmin);
+    text-shadow: 0.2rem 0.2rem 0.2rem #ffb6c1;
+}
+
+h3 {
+    margin: 5rem 0rem 1.5rem 0rem;
+    font-size: calc(1.5vw + 1.5vh + 2vmin);
     text-shadow: 0.2rem 0.2rem 0.2rem #ffb6c1;
 }
 
