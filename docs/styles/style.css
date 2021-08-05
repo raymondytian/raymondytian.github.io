@@ -80,7 +80,6 @@ p {
     line-height: 1.5;
     letter-spacing: 0.1rem;
     overflow-wrap: break-word;
-    max-width: 30rem;
 }
 
 a {
