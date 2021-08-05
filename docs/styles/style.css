@@ -43,6 +43,10 @@ h4 {
     text-shadow: 0.1rem 0.1rem 0.1rem #ffb6c1;
 }
 
+#contact-me-header {
+    margin: 0 10% 0 0;
+}
+
 p {
     font-size: 1rem;
     line-height: 1.5;
@@ -54,10 +58,11 @@ p {
 a {
     color: #ffb6c1;
     text-decoration-thickness: 0;
+    opacity: 0.75;
 }
 
-a:hover {
-    color: skyblue;
+a:active, :hover {
+    opacity: 1;
 }
 
 .collapsible-link {
@@ -95,22 +100,12 @@ footer {
     margin: 0 0 2rem 0;
 }
 
-@media(hover: hover) {
-    .collapsible:hover {
-        padding: 1.1rem 0.9rem 1.1rem 0.9rem;
-        background-color: #121212;
-        opacity: 1;
-        margin: 0 0 0.6 0;
-        border-width: 0.2rem;
-    }
-}
-
-@media(hover: none) {
-    .collapsible:active {
-        padding: 1.2rem 1rem 1.2rem 1rem;
-        background-color: #121212;
-        opacity: 1;
-    }
+.collapsible:active, .collapsible:hover {
+    padding: 1.1rem 0.9rem 1.1rem 0.9rem;
+    background-color: #121212;
+    opacity: 1;
+    margin: 0 0 0.6 0;
+    border-width: 0.2rem;
 }
 
 .wink-content {
