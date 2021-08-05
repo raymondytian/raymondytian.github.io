@@ -62,13 +62,15 @@ a {
 }
 
 @media(hover: hover) {
-    a:hover {
+    .link:hover {
+        color: #ffb6c1;
         opacity: 1;
     }
 }
 
 @media(hover: none) {
-    a:active {
+    .link:active {
+        color: #ffb6c1;
         opacity: 1;
     }
 }
