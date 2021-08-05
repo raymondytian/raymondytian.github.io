@@ -23,7 +23,8 @@ section {
 }
 
 h1 {
-    font-size: calc(4vw + 4vh + 2vmin);
+    font-size: calc(3.5vw + 3.5vh + 2vmin);
+    max-width: 100%;
 }
 
 h2 {
