@@ -1,7 +1,7 @@
 html {
     background-color: #121212;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: calc(0.5vw + 0.5vh + 1vmin);
+    font-family: "Roboto", sans-serif;
     color: white;  
     margin: auto;
 }
@@ -23,17 +23,20 @@ section {
 }
 
 h1 {
+    font-family: "Playfair Display", sans-serif;
     font-size: calc(3vw + 3vh + 2vmin);
     max-width: 100%;
 }
 
 h2 {
+    font-family: "Playfair Display", sans-serif;
     font-size: calc(3vw + 3vh + 2vmin);
 }
 
 h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: calc(1vw + 1vh + 2vmin);
     font-weight: 400;
-    font-size: calc(1.5vw + 1.5vh + 2vmin);
 }
 
 h4 {
@@ -42,26 +45,26 @@ h4 {
 
 .period-main {
     font-size: 4rem;
-    color: lightpink;
+    color: #ffb6c1;
 }
 
 .period {
     font-size: 4rem;
     text-shadow: none;
-    color: skyblue;
+    color: #CFB5FF;
 }
 
 .heading-underline-main {
     width: calc(4vw + 4vh + 2vmin);
-    height: 0.4rem;
-    background-color: lightpink;
-    margin: 0rem 0 7rem .45rem;
+    height: 0.3rem;
+    background-color: #ffb6c1;
+    margin: 0.5rem 0 7rem .45rem;
 }
 
 .heading-underline {
     width: calc(3vw + 3vh + 2vmin);
     height: 0.25rem;
-    background-color: skyblue;
+    background-color: #CFB5FF;
     margin: 0rem 0 3rem .45rem;
 }
 
@@ -121,58 +124,66 @@ footer {
     margin: 5rem 0rem 0rem 0rem;
 }
 
-.collapsible {
-    padding: 1rem 1rem 1rem 1rem;
-    background-color: #121212;
+
+@media (min-width: 813px) {
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 812px) {
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+.projects {
+    flex: 1 1;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #CFB5FF;
     opacity: 0.75;
     cursor: pointer;
     color: white;
     text-align: left;
-    max-width: 30rem;
-    border-style: solid;
-    border-radius: 1rem;
-    border-color: #ffb6c1;
-    border-width: 0.1rem;
-    margin: 0 0 2rem 0;
+    min-width: 20rem;
+}
+
+.collapsible {
+    color: white;
 }
 
 @media(hover: hover) {
-    .collapsible:hover {
-        padding: 1.1rem 0.9rem 1.1rem 0.9rem;
-        background-color: #121212;
+    .projects:hover {
         opacity: 1;
-        margin: 0 0 0.6 0;
-        border-width: 0.2rem;
+        padding: 1.75rem 1.5rem 1.75rem 1.5rem;
+        border-color: #ffb6c1
     }
 
-    .collapsible:hover h3 {
+    .projects:hover h3 {
         color: #ffb6c1;
-        text-shadow: 0 0 0;
+        opacity: 1;
     }
 }
 
 @media(hover: none) {
-    .collapsible:active {
-        padding: 1.1rem 0.9rem 1.1rem 0.9rem;
-        background-color: #121212;
+    .projects:active {
         opacity: 1;
-        margin: 0 0 0.6 0;
-        border-width: 0.2rem;
     }
 
-    .collapsible:active h3 {
-        color: #ffb6c1;
-        text-shadow: 0 0 0;
+    .projects:active h3 {
+        color: #CFB5FF;
+        opacity: 1;
     }
 }
 
-.wink-content {
-    padding: 0;
-    display: none;
-    overflow-wrap: break-word;
-    background-color: #121212;
-}
-
-.projects {
-    padding: 0.5rem 0;
-}
