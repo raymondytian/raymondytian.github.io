@@ -61,7 +61,7 @@ a {
     opacity: 0.75;
 }
 
-a:active, :hover {
+a:hover {
     opacity: 1;
 }
 
@@ -100,12 +100,24 @@ footer {
     margin: 0 0 2rem 0;
 }
 
-.collapsible:active, .collapsible:hover {
-    padding: 1.1rem 0.9rem 1.1rem 0.9rem;
-    background-color: #121212;
-    opacity: 1;
-    margin: 0 0 0.6 0;
-    border-width: 0.2rem;
+@media(hover: hover) {
+    .collapsible:hover {
+        padding: 1.1rem 0.9rem 1.1rem 0.9rem;
+        background-color: #121212;
+        opacity: 1;
+        margin: 0 0 0.6 0;
+        border-width: 0.2rem;
+    }
+}
+
+@media(hover: none) {
+    .collapsible:active {
+        padding: 1.2rem 1rem 1.2rem 1rem;
+        background-color: #121212;
+        opacity: 1;
+        margin: 0 0 0.6 0;
+        border-width: 0.2rem;
+    }
 }
 
 .wink-content {
