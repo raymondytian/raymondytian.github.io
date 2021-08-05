@@ -62,13 +62,13 @@ a {
 }
 
 @media(hover: hover) {
-    .a:hover {
+    a:hover {
         opacity: 1;
     }
 }
 
 @media(hover: none) {
-    .a:active {
+    a:active {
         opacity: 1;
     }
 }
