@@ -14,11 +14,13 @@ html {
 .main {
     background-color: #f76c6c;
     padding: 10rem 0;
+    position: relative;
 }
 
 .projects {
     background-color: #24305e;
-    padding: 10rem 0;
+    padding: 20rem 0 15rem 0;
+    position: relative;
 }
 
 h1 {
@@ -51,6 +53,47 @@ h4 {
     font-size: calc(2.5vw + 2.5vh + 2vmin);
 }
 
+.custom-shape-divider-top-1628210395 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1628210395 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-top-1628210395 .shape-fill {
+    fill: #F76C6C;
+}
+
+.custom-shape-divider-top-1628210735 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1628210735 svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1628210735 .shape-fill {
+    fill: #24305E;
+}
+
 .heading-underline {
     width: calc(2vw + 2vh + 2vmin);
     height: calc(0.2vw + 0.2vh + 0vmin);
@@ -64,7 +107,8 @@ h4 {
 
 .contact-me {
     background-color: #d68bc9;
-    padding: 10rem 0;
+    padding: 20rem 0 8rem 0;
+    position: relative;
 }
 
 p {
