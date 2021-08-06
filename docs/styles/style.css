@@ -53,7 +53,7 @@ h4 {
     font-size: calc(2.5vw + 2.5vh + 2vmin);
 }
 
-.custom-shape-divider-top-1628210395 {
+.custom-shape-divider-top-1628211038 {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,18 +62,18 @@ h4 {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1628210395 svg {
+.custom-shape-divider-top-1628211038 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 120px;
+    width: calc(100%);
+    height: calc(2vw + 2vh + 2vmin);
 }
 
-.custom-shape-divider-top-1628210395 .shape-fill {
+.custom-shape-divider-top-1628211038 .shape-fill {
     fill: #F76C6C;
 }
 
-.custom-shape-divider-top-1628210735 {
+.custom-shape-divider-top-1628211004 {
     position: absolute;
     top: 0;
     left: 0;
@@ -82,15 +82,15 @@ h4 {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1628210735 svg {
+.custom-shape-divider-top-1628211004 svg {
     position: relative;
     display: block;
-    width: calc(117% + 1.3px);
-    height: 150px;
+    width: calc(100%);
+    height: calc(2vw + 2vh + 2vmin);
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1628210735 .shape-fill {
+.custom-shape-divider-top-1628211004 .shape-fill {
     fill: #24305E;
 }
 
