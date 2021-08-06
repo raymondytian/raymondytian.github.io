@@ -1,15 +1,15 @@
 const observerOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1
+    threshold: 0.2
 };
   
 function observerCallback(entries, observer) {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-        entry.target.classList.replace('fadeOut', 'fadeIn');
+        if (!entry.isIntersecting) {
+        return;
         } else {
-            entry.target.classList.replace('fadeIn', 'fadeOut');
+            entry.target.classList.replace('fadeOut', 'fadeIn');
         }
     });
 }
