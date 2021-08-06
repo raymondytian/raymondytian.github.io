@@ -95,8 +95,8 @@ h4 {
 }
 
 .heading-underline {
-    width: calc(2vw + 2vh + 2vmin);
-    height: calc(0.2vw + 0.2vh + 0vmin);
+    width: 4rem;
+    height: 0.25rem;
     background-color: white;
     margin: 1rem auto;
 }
