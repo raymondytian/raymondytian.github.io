@@ -215,24 +215,38 @@ a {
     background: var(--clr-pink);
 }
 
-.bg-mountains {
-    background: url(../images/pexels-cmonphotography-1809644.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #121212;
-    width: 100%;
+@media (min-width: 813px) {
+    .bg-mountains {
+        background: url(../images/pexels-cmonphotography-1809644.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-color: #121212;
+        width: 100%;
+    }
+
+    .bg-clouds {
+        background: url(../images/pexels-jakub-novacek-924824.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: cover;
+        background-color: #121212;
+        width: 100%;
+    }
 }
 
-.bg-clouds {
-    background: url(../images/pexels-jakub-novacek-924824.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #121212;
-    width: 100%;
+@media (max-width: 812px) {
+    .bg-mountains {
+        background-color: #24305e;
+        width: 100%;
+    }
+
+    .bg-clouds {
+        background-color: #f76c6c;
+        width: 100%;
+    }
 }
 
 .header-spacing {
