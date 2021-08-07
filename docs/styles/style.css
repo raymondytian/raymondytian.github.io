@@ -1,6 +1,6 @@
 html {
     background-color: #121212;
-    font-family: "Helvetica";
+    font-family: "Roboto", sans-serif;
     color: white;  
     margin: auto;
     height: 100%;
@@ -12,6 +12,7 @@ html {
     padding: 0;
     margin: 0;
     transition: 0s linear;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,8 @@ body {
     height: 100%;
     overflow-y: scroll; 
     overflow-x: hidden;
+    justify-content: center;
+    min-height: 100vh
 }
 
 header {
@@ -63,9 +66,101 @@ header * {
 }
 
 .projects {
-    background-color: #24305e;
+    background: url(../images/pexels-jv-buenconcejo-2719301.jpg);
     padding: 20rem 0 15rem 0;
     position: relative;
+    min-height: 100vh;
+    width: 100%;
+} 
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 520px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+   padding: 20px;
+   text-align: center;
+   transform: translateY(100px);
+   opacity: 0;
+   transition: 0.5s;
+}
+
+@media(hover: hover) {
+    .container .card:hover .content {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@media(hover: none) {
+    .container .card:active .content {
+        transform: translateY(0px); 
+        opacity: 1;
+    }
+}
+ 
+
+.container .card .content h2 {
+    font-family: "Poppins";
+    position: absolute;
+    top: -80px;
+    right: -40px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.container .card .content h3 {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    line-height: 1.2;
+}
+
+.container .card .content p {
+    font-size: 1.1rem;
+    color: #fff;
+    z-index: 1;
+    text-align: left;
+    text-align: center;
+}
+
+.container .card .content a {
+    font-family: "Poppins";
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 2rem;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -77,7 +172,7 @@ h2 {
 }
 
 h3 {
-    font-size: calc(1vw + 1vh + 2vmin);
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -91,47 +186,6 @@ h5 {
 
 .period {
     font-size: calc(2.5vw + 2.5vh + 2vmin);
-}
-
-.custom-shape-divider-top-1628211038 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1628211038 svg {
-    position: relative;
-    display: block;
-    width: calc(100%);
-    height: calc(2vw + 2vh + 2vmin);
-}
-
-.custom-shape-divider-top-1628211038 .shape-fill {
-    fill: #F76C6C;
-}
-
-.custom-shape-divider-top-1628211004 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1628211004 svg {
-    position: relative;
-    display: block;
-    width: calc(100%);
-    height: calc(2vw + 2vh + 2vmin);
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1628211004 .shape-fill {
-    fill: #24305E;
 }
 
 .heading-underline {
@@ -155,14 +209,6 @@ h5 {
     position: relative;
 }
 
-p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.1rem;
-    overflow-wrap: break-word;
-}
-
 a {
     color:white;
     text-underline-offset: 0.25rem;
@@ -180,76 +226,9 @@ a {
     }
 }
 
-.collapsible-link {
-    text-decoration: none;
-}
-
 footer {
     padding: 5% 0;
     background-color: #d68bc9;
-}
-
-
-@media (min-width: 813px) {
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: row;
-    }
-}
-
-@media (max-width: 812px) {
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.project {
-    flex: 1 1;
-    padding: 1.5rem 1.5rem 2rem 1.5rem;
-    margin: 1rem;
-    box-sizing: border-box;
-    border-width: 0.1rem;
-    border-style: solid;
-    border-radius: 1rem;
-    border-color: white;
-    opacity: 0.75;
-    cursor: pointer;
-    color: white;
-    text-align: left;
-    min-width: 20rem;
-}
-
-.collapsible {
-    color: white;
-}
-
-@media(hover: hover) {
-    .project:hover {
-        background-color: #374785;
-        opacity: 1;
-        padding: 1.75rem 1.5rem 1.75rem 1.5rem;
-    }
-
-    .project:hover h3 {
-        opacity: 1;
-    }
-}
-
-@media(hover: none) {
-    .project:active {
-        background-color: #374785;
-        opacity: 1;
-        padding: 1.75rem 1.5rem 1.75rem 1.5rem;
-    }
-
-    .project:active h3 {
-        opacity: 1;
-    }
 }
 
 .text {
@@ -264,6 +243,15 @@ footer {
 .fadeOut { 
     opacity: 0; 
 }
+
 .fadeIn { 
     opacity: 1; 
+}
+
+#pw-space {
+    padding: 1rem 0 0 0;
+}
+
+#w-space {
+    padding: 2rem 0 0 0;
 }
