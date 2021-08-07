@@ -244,8 +244,10 @@ a {
     }
 
     .bg-clouds {
-        background-color: #f76c6c;
+        background: url(../images/pexels-scott-webb-1931155.jpg);
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
