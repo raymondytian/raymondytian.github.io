@@ -24,38 +24,18 @@ body {
     overflow-x: hidden;
 }
 
-@media (min-width: 813px) {
-    .projects {
+.projects {
     padding: 0 0 20vw 0;
     box-sizing: border-box;
     position: relative;
     transform-style: inherit;
-    }
-
-    header {
-        padding: 25vw 0 75vw 0;
-        box-sizing: border-box;
-        position: relative;
-        transform-style: inherit;
-    }
 }
 
-@media (max-width: 812px) {
-    .projects {
-        padding: 0 0 20vw 0;    
-        box-sizing: border-box;
-        position: relative;
-        transform-style: inherit;
-    }
-
-    header {
-        box-sizing: border-box;
-        min-height: 100vw;
-        padding: 20vw 0 400vw 0;
-        position: relative;
-        transform-style: inherit;
-        width: 100vw;
-    }
+header {
+    padding: 25vw 0 75vw 0;
+    box-sizing: border-box;
+    position: relative;
+    transform-style: inherit;
 }
 
 .projects, .projects::before {
@@ -117,7 +97,6 @@ header * {
     margin: 0;
 } 
 
-
 h2 {
     font-family: "Playfair Display", sans-serif;
     font-size: calc(5vw + 5vh + 2vmin);
@@ -137,6 +116,7 @@ h4 {
 
 h5 {
     font-size: calc(2vw + 2vh + 2vmin);
+    text-align: center;
 }
 
 .period {
