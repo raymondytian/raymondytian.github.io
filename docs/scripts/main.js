@@ -17,4 +17,5 @@ function observerCallback(entries, observer) {
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 const fadeElms = document.querySelectorAll('.fade');
+console.log(fadeElms);
 fadeElms.forEach(el => observer.observe(el));

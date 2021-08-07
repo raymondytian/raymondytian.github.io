@@ -1,137 +1,65 @@
-html {
-    background-color: #121212;
-    font-family: "Helvetica";
-    color: white;  
+:root {
+    --clr-red: #f76c6c;
+    --clr-navy: #24305e;
+    --clr-pink: #ffb6c1;
+    --clr-black: #121212;
+    --clr-white: #fff;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Playfair Display', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.5;
+    color: var(--clr-white);
     margin: auto;
     height: 100%;
     overflow: hidden;
     scroll-behavior: smooth;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    transition: 0s linear;
-}
-
-body {
     perspective: 1px;
     transform-style: preserve-3d;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-y: scroll; 
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
-header {
-    box-sizing: border-box;
-    min-height: 100vw;
-    padding: 20vw 0 135vw 0;
-    position: relative;
-    transform-style: inherit;
-    width: 100vw;
-}
-
-header, header::before {
-    background: 50% 50% / cover;
-}
-
-header::before {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    background-image: url(../images/pexels-kasuma-1785493.jpg);
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
-    min-height: 100vh;
-    transition: 0s linear;
-    transition-property: background-position;
-}
-
-header * {
-    font-weight: normal;
-    letter-spacing: 0.2rem;
-    text-align: center;
+body,
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
-.projects {
-    background-color: #24305e;
-    padding: 20rem 0 15rem 0;
-    position: relative;
+h1,
+h2,
+h3 {
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: calc(5vw + 5vh + 2vmin);
 }
 
 h2 {
-    font-family: "Playfair Display", sans-serif;
-    font-size: calc(5vw + 5vh + 2vmin);
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-h3 {
-    font-size: calc(1vw + 1vh + 2vmin);
-    font-weight: 400;
-}
-
-h4 {
-    font-size: calc(1vw + 1vh + 2vmin);
-}
-
-h5 {
-    font-size: calc(2vw + 2vh + 2vmin);
-}
-
-.period {
-    font-size: calc(2.5vw + 2.5vh + 2vmin);
-}
-
-.custom-shape-divider-top-1628211038 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1628211038 svg {
-    position: relative;
-    display: block;
-    width: calc(100%);
-    height: calc(2vw + 2vh + 2vmin);
-}
-
-.custom-shape-divider-top-1628211038 .shape-fill {
-    fill: #F76C6C;
-}
-
-.custom-shape-divider-top-1628211004 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1628211004 svg {
-    position: relative;
-    display: block;
-    width: calc(100%);
-    height: calc(2vw + 2vh + 2vmin);
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1628211004 .shape-fill {
-    fill: #24305E;
+    font-size: calc(3vw + 3vh + 2vmin);
 }
 
 .heading-underline {
@@ -141,26 +69,123 @@ h5 {
     margin: 1rem auto;
 }
 
-.spacing {
-    margin: 0 0 3rem 0;
+.text-center {
+    text-align: center;
 }
 
-.big-spacing {
-    margin: 0 0 75vw 0;
+header {
+    height: 100vh;
 }
 
-.contact-me {
-    background-color: #d68bc9;
-    padding: 20rem 0 8rem 0;
+section {
+    height: 50rem;
+    padding: 10rem 0;
+}
+
+.projects {
+    min-height: 100vh;
+    width: 100%;
     position: relative;
 }
 
-p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.1rem;
-    overflow-wrap: break-word;
+@media (min-width: 40rem) {
+    header, section {
+        padding: 7rem 0;
+    }
+}
+
+.container {
+    margin-inline: auto;
+}
+
+
+.projects-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.projects-container .card {
+    position: relative;
+    width: 320px;
+    height: 520px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.projects-container .card .content {
+   padding: 20px;
+   text-align: center;
+   transform: translateY(100px);
+   opacity: 0;
+   transition: 0.5s;
+}
+
+@media(hover: hover) {
+    .projects-container .card:hover .content {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@media(hover: none) {
+    .projects-container .card .content {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+ 
+.projects-container .card .content h2 {
+    font-family: "Poppins";
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.projects-container .card .content h3 {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    line-height: 1.2;
+}
+
+.projects-container .card .content p {
+    font-size: 1.1rem;
+    color: #fff;
+    z-index: 1;
+    text-align: left;
+    text-align: center;
+}
+
+.projects-container .card .content a {
+    font-family: "Poppins";
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 2rem;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
 }
 
 a {
@@ -170,91 +195,50 @@ a {
 
 @media(hover: hover) {
     .link:hover {
-        font-size: 1.1rem;
+        transition: font-size 0.1s;
+        font-size: 1.4rem;
     }
 }
 
 @media(hover: none) {
     .link:active {
-        font-size: 1.1rem;
+        transition: font-size 0.1s;
+        font-size: 1.4rem;
     }
 }
 
-.collapsible-link {
-    text-decoration: none;
+.bg-black {
+    background: var(--clr-black);
 }
 
-footer {
-    padding: 5% 0;
-    background-color: #d68bc9;
+.bg-pink {
+    background: var(--clr-pink);
 }
 
-
-@media (min-width: 813px) {
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: row;
-    }
+.bg-mountains {
+    background: url(../images/pexels-cmonphotography-1809644.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
-@media (max-width: 812px) {
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
+.bg-clouds {
+    background: url(../images/pexels-jakub-novacek-924824.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
-.project {
-    flex: 1 1;
-    padding: 1.5rem 1.5rem 2rem 1.5rem;
-    margin: 1rem;
-    box-sizing: border-box;
-    border-width: 0.1rem;
-    border-style: solid;
-    border-radius: 1rem;
-    border-color: white;
-    opacity: 0.75;
-    cursor: pointer;
-    color: white;
-    text-align: left;
-    min-width: 20rem;
+.header-spacing {
+    padding: 10vh 0;
 }
 
-.collapsible {
-    color: white;
-}
-
-@media(hover: hover) {
-    .project:hover {
-        background-color: #374785;
-        opacity: 1;
-        padding: 1.75rem 1.5rem 1.75rem 1.5rem;
-    }
-
-    .project:hover h3 {
-        opacity: 1;
-    }
-}
-
-@media(hover: none) {
-    .project:active {
-        background-color: #374785;
-        opacity: 1;
-        padding: 1.75rem 1.5rem 1.75rem 1.5rem;
-    }
-
-    .project:active h3 {
-        opacity: 1;
-    }
-}
-
-.text {
-    text-align: center;
-    margin: 0 5%;
+.spacing {
+    padding: 5rem 0;
 }
 
 .fade {
@@ -264,6 +248,24 @@ footer {
 .fadeOut { 
     opacity: 0; 
 }
+
 .fadeIn { 
     opacity: 1; 
+}
+
+.contact-me {
+    position: relative;
+    padding: 0 0 5rem 0;
+}
+
+.text {
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+    padding: 0 5%;
+}
+
+.footer {
+    font-family: var(--ff-primary);
+    font-size: 0.75rem;
+    padding: 0 5%;
 }
