@@ -42,7 +42,8 @@ body {
 
 @media (max-width: 812px) {
     .projects {
-    padding: 0 0 20vw 0;
+    min-height: 100vw;
+    padding: 20vw 0 135vw 0;    
     box-sizing: border-box;
     position: relative;
     transform-style: inherit;
@@ -97,7 +98,7 @@ header::before {
     right: 0;
     top: 0;
     display: block;
-    background-image: url(../images/pexels-jv-buenconcejo-2719301.jpg);
+    background-image: url(../images/pexels-kasuma-1785493.jpg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
@@ -157,7 +158,7 @@ h5 {
 
 .contact-me {
     background-color: #d68bc9;
-    padding: 20rem 0 8rem 0;
+    padding: 8rem 0 8rem 0;
     position: relative;
 }
 
