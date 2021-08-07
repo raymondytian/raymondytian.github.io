@@ -42,18 +42,19 @@ body {
 
 @media (max-width: 812px) {
     .projects {
-    min-height: 100vw;
-    padding: 20vw 0 135vw 0;    
-    box-sizing: border-box;
-    position: relative;
-    transform-style: inherit;
-    }
-
-    header {
-        padding: 25vw 0 175vw 0;
+        padding: 0 0 20vw 0;    
         box-sizing: border-box;
         position: relative;
         transform-style: inherit;
+    }
+
+    header {
+        box-sizing: border-box;
+        min-height: 100vw;
+        padding: 20vw 0 400vw 0;
+        position: relative;
+        transform-style: inherit;
+        width: 100vw;
     }
 }
 
@@ -74,9 +75,10 @@ body {
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
-    min-height: 100vh;
     transition: 0s linear;
     transition-property: background-position;
+    max-height: 300vw;
+    max-width: 100vw;
 }
 
 .projects * {
@@ -191,12 +193,6 @@ a {
     text-decoration: none;
 }
 
-footer {
-    padding: 5% 0;
-    background-color: #d68bc9;
-}
-
-
 @media (min-width: 813px) {
     .projects-container {
         display: flex;
@@ -273,4 +269,9 @@ footer {
 }
 .fadeIn { 
     opacity: 1; 
+}
+
+footer {
+    padding: 5% 0;
+    background-color: #d68bc9;
 }
