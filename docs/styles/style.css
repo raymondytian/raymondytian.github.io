@@ -220,7 +220,7 @@ a {
         background: url(../images/pexels-cmonphotography-1809644.jpg);
         background-position: center center;
         background-repeat: no-repeat;
-        background-attachment: initial;
+        background-attachment: fixed;
         background-size: cover;
         background-color: #121212;
         width: 100%;
@@ -230,7 +230,7 @@ a {
         background: url(../images/pexels-jakub-novacek-924824.jpg);
         background-position: center center;
         background-repeat: no-repeat;
-        background-attachment: initial;
+        background-attachment: fixed;
         background-size: cover;
         background-color: #121212;
         width: 100%;
