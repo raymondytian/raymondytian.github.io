@@ -97,5 +97,15 @@
         <footer>
             <p class="text">This site is built from scratch with pure HTML, CSS and JavaScript.</p>
         </footer> 
+        <script src="scripts/vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 0,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+                scale: 1.1,
+            });
+        </script>
     </body>
 </html>
