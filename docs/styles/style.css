@@ -116,8 +116,7 @@ header * {
 
 
 @media(hover: none) {
-    .container .card:active .content {
-        transform: translateY(0px); 
+    .container .card .content {
         opacity: 1;
     }
 }
