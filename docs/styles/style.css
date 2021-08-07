@@ -24,13 +24,65 @@ body {
     overflow-x: hidden;
 }
 
-header {
+@media (min-width: 813px) {
+    .projects {
+    padding: 0 0 20vw 0;
     box-sizing: border-box;
-    min-height: 100vw;
-    padding: 20vw 0 135vw 0;
     position: relative;
     transform-style: inherit;
-    width: 100vw;
+    }
+
+    header {
+        padding: 25vw 0 75vw 0;
+        box-sizing: border-box;
+        position: relative;
+        transform-style: inherit;
+    }
+}
+
+@media (max-width: 812px) {
+    .projects {
+    padding: 0 0 20vw 0;
+    box-sizing: border-box;
+    position: relative;
+    transform-style: inherit;
+    }
+
+    header {
+        padding: 25vw 0 175vw 0;
+        box-sizing: border-box;
+        position: relative;
+        transform-style: inherit;
+    }
+}
+
+.projects, .projects::before {
+    background: 50% 50% / cover;
+}
+
+.projects::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(../images/pexels-jakub-novacek-924824.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+    transition: 0s linear;
+    transition-property: background-position;
+}
+
+.projects * {
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin: 0;
 }
 
 header, header::before {
@@ -45,7 +97,7 @@ header::before {
     right: 0;
     top: 0;
     display: block;
-    background-image: url(../images/pexels-kasuma-1785493.jpg);
+    background-image: url(../images/pexels-jv-buenconcejo-2719301.jpg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
@@ -60,13 +112,8 @@ header * {
     letter-spacing: 0.2rem;
     text-align: center;
     margin: 0;
-}
+} 
 
-.projects {
-    background-color: #24305e;
-    padding: 20rem 0 15rem 0;
-    position: relative;
-}
 
 h2 {
     font-family: "Playfair Display", sans-serif;
@@ -93,47 +140,6 @@ h5 {
     font-size: calc(2.5vw + 2.5vh + 2vmin);
 }
 
-.custom-shape-divider-top-1628211038 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1628211038 svg {
-    position: relative;
-    display: block;
-    width: calc(100%);
-    height: calc(2vw + 2vh + 2vmin);
-}
-
-.custom-shape-divider-top-1628211038 .shape-fill {
-    fill: #F76C6C;
-}
-
-.custom-shape-divider-top-1628211004 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1628211004 svg {
-    position: relative;
-    display: block;
-    width: calc(100%);
-    height: calc(2vw + 2vh + 2vmin);
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1628211004 .shape-fill {
-    fill: #24305E;
-}
-
 .heading-underline {
     width: 10%;
     height: 0.25rem;
@@ -146,7 +152,7 @@ h5 {
 }
 
 .big-spacing {
-    margin: 0 0 75vw 0;
+    margin: 0 0 30vw 0;
 }
 
 .contact-me {
