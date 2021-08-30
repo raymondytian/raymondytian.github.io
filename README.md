@@ -1,1 +1,1 @@
-just learning web dev
+This website was initially made for me to engage in learning HTML, CSS, and JavaScript in a purposeful and fun manner. Now, it serves as a display and a reflection of my projects and future endeavors.
